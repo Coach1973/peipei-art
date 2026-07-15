@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>佩佩老師｜大提琴演奏家・音樂教育家</title>
-<meta name="description" content="佩佩老師，大提琴演奏家與音樂教育家，25年音樂資歷，超過2000場演出經驗。用音樂說故事，用琴弦傳遞情感。">
+<title>陳佩君老師｜鋼琴家・音樂教育家</title>
+<meta name="description" content="陳佩君，國立台南藝術大學音樂表演與創作研究所鋼琴演奏碩士。專注鋼琴教學、獨奏演出與音樂跨界策展，累積四十餘場正式演出紀錄，現任崇學國小音樂班鋼琴指導老師。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 :root{
   --bg:#f8f0f7;
   --bg-soft:#faf5fb;
-  --paper:rgba(255,255,255,.88);
+  --paper:rgba(255,255,255,.9);
   --text:#2c1f2e;
   --muted:#6b4f6a;
   --muted-2:#8c6d8a;
@@ -25,194 +25,367 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 .container{width:min(var(--max),calc(100% - 32px));margin:auto}
-.section{padding:88px 0}
+.section{padding:80px 0}
+.section-alt{background:var(--bg-soft)}
 .eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:900;color:#8c6d8a}
-.hero{position:relative;overflow:hidden;padding:96px 0 96px;background:linear-gradient(135deg,#f8f0f7 0%,#f0ddee 45%,#e8d0e5 100%)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.headline{font-size:clamp(38px,5vw,62px);line-height:1.08;font-weight:900;margin:10px 0 14px;letter-spacing:-.02em}
-.headline .accent{color:var(--accent-2)}
-.tagline{font-size:clamp(20px,2.4vw,26px);color:var(--accent);font-weight:900;margin-bottom:16px}
-.lead{font-size:17px;color:var(--muted);max-width:560px}
-.meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:32px;max-width:420px}
-.meta-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px;text-align:center;box-shadow:var(--shadow)}
-.meta-card strong{display:block;font-size:30px;font-weight:900;color:var(--accent)}
-.meta-card span{font-size:13px;color:var(--muted-2)}
+h2{font-size:clamp(28px,3.4vw,40px);margin:8px 0 16px;font-weight:900;line-height:1.2;letter-spacing:-.02em}
+.section-lead{font-size:16px;color:var(--muted);max-width:720px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:72px 0;background:linear-gradient(135deg,#f8f0f7 0%,#f0ddee 45%,#e8d0e5 100%)}
+.hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
 .hero-photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
 .hero-photo img{width:100%;height:auto;display:block}
-h2{font-size:clamp(30px,3.6vw,44px);margin:0 0 14px;font-weight:900;line-height:1.15;letter-spacing:-.02em}
-.section-lead{font-size:17px;color:var(--muted);max-width:720px}
-.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center;margin-top:36px}
-.split.reverse{grid-template-columns:1.1fr .9fr}
+.chip{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;border:1px solid var(--gold);background:rgba(255,255,255,.75);font-weight:800;color:var(--muted);font-size:13px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.headline{font-size:clamp(34px,4.6vw,54px);line-height:1.15;font-weight:900;margin:16px 0 12px;letter-spacing:-.02em}
+.headline .accent{color:var(--accent-2)}
+.lead{font-size:16px;color:var(--muted);max-width:560px}
+.meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px;max-width:440px}
+.meta-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center;box-shadow:var(--shadow)}
+.meta-card strong{display:block;font-size:15px;font-weight:900;color:var(--accent)}
+.meta-card span{font-size:12px;color:var(--muted-2)}
+
+/* split layout */
+.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:flex-start;margin-top:32px}
+.split.reverse{grid-template-columns:1.15fr .85fr}
 .split.reverse .photo-wrap{order:2}
-.photo-wrap{border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.photo-wrap{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);position:sticky;top:24px}
 .photo-wrap img{width:100%;height:auto;display:block}
-.text-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:32px;box-shadow:var(--shadow)}
-.text-card h3{font-size:20px;margin:0 0 14px;color:var(--text)}
-.text-card p{font-size:15px;color:var(--muted);margin:0;line-height:1.8}
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
-.photo-card{border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
-.photo-card img{width:100%;height:200px;object-fit:cover}
-.photo-card .caption{font-size:13px;color:var(--muted-2);padding:12px 14px;background:var(--paper);text-align:center}
+.text-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px 30px;box-shadow:var(--shadow)}
+.text-card h3{font-size:18px;margin:0 0 12px;color:var(--text)}
+.text-card p{font-size:15px;color:var(--muted);margin:0 0 14px;line-height:1.9}
+.text-card p:last-child{margin-bottom:0}
+.text-card ul{margin:0 0 14px;padding-left:20px;color:var(--muted);font-size:15px;line-height:1.9}
 
-/* YouTube 影片區塊 */
-.video-section{background:var(--bg-soft)}
-.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px;margin-top:32px}
-.video-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
-.video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
-.video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
-.video-info{padding:18px 20px}
-.video-info .source{font-size:11px;font-weight:900;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
-.video-info h3{font-size:15px;margin:6px 0 0;color:var(--text);font-weight:700}
-.video-info p{font-size:13px;color:var(--muted-2);margin:8px 0 0}
+/* 師承時間軸 */
+.timeline{margin-top:28px;display:grid;gap:16px}
+.tl-item{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 24px;box-shadow:var(--shadow);display:grid;grid-template-columns:140px 1fr;gap:20px}
+.tl-item .year{font-weight:900;color:var(--accent);font-size:15px}
+.tl-item .detail{color:var(--muted);font-size:14.5px;line-height:1.8}
+.tl-item .detail strong{color:var(--text)}
+.mentor-tags{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.mentor-tag{background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px;color:var(--muted);font-weight:700}
 
-/* 更多影片連結 */
-.more-videos{margin-top:40px;padding:28px;background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
-.more-videos h3{font-size:18px;margin:0 0 16px;color:var(--text)}
-.more-links{display:flex;flex-wrap:wrap;gap:12px}
-.more-link{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;border-radius:999px;font-size:14px;font-weight:700;transition:transform .2s,box-shadow .2s}
-.more-link:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(152,114,164,.3)}
+/* 精選演出 */
+.perf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.perf-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.perf-card .thumb{height:200px;overflow:hidden}
+.perf-card .thumb img{width:100%;height:100%;object-fit:cover}
+.perf-card .body{padding:18px 20px}
+.perf-card .date{font-size:12px;font-weight:900;color:var(--accent);letter-spacing:.04em}
+.perf-card h3{font-size:15.5px;margin:6px 0 0;color:var(--text);font-weight:700;line-height:1.5}
+.perf-card p{font-size:13px;color:var(--muted-2);margin:8px 0 0}
 
-/* 媒體報導（傳統媒體）*/
-.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
-.media-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
-.media-card .media-thumb{height:180px;overflow:hidden}
-.media-card .media-thumb img{width:100%;height:100%;object-fit:cover}
-.media-card .media-body{padding:18px 20px}
+.more-btn-wrap{text-align:center;margin-top:40px}
+.more-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;border:none;border-radius:999px;font-size:15px;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s;font-family:inherit}
+.more-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(152,114,164,.35)}
+.more-btn .arrow{transition:transform .25s}
+.more-btn.open .arrow{transform:rotate(90deg)}
+
+/* 完整演出列表 */
+#full-perf-list{display:none;margin-top:36px}
+#full-perf-list.show{display:block}
+.perf-table-wrap{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow-x:auto}
+table.perf-table{width:100%;border-collapse:collapse;font-size:13.5px}
+table.perf-table th{background:rgba(152,114,164,.12);color:var(--accent);font-weight:900;text-align:left;padding:14px 16px;white-space:nowrap;position:sticky;top:0}
+table.perf-table td{padding:14px 16px;border-top:1px solid var(--line);color:var(--muted);vertical-align:top}
+table.perf-table tr:nth-child(even) td{background:rgba(216,192,213,.12)}
+table.perf-table td.event{color:var(--text);font-weight:700}
+table.perf-table td.date{white-space:nowrap;color:var(--muted-2)}
+
+/* 著作與文章 */
+.pub-list{margin-top:28px;display:grid;gap:12px}
+.pub-item{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 22px;box-shadow:var(--shadow);font-size:14.5px;color:var(--muted);display:flex;gap:14px;align-items:flex-start}
+.pub-item .num{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.pub-item a{color:var(--accent-2);font-weight:700;text-decoration:underline}
+
+/* 媒體報導 */
+.media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
+.media-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
 .media-card .outlet{font-size:11px;font-weight:900;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
-.media-card h3{font-size:15px;margin:6px 0 0;color:var(--text);font-weight:700}
-.media-card p{font-size:13px;color:var(--muted-2);margin:8px 0 0}
+.media-card h3{font-size:17px;margin:10px 0;color:var(--text);line-height:1.5}
+.media-card p{font-size:13.5px;color:var(--muted-2);margin:0 0 14px}
+.media-card a.read{font-weight:800;color:var(--accent-2)}
 
-/* Q&A */
-.qa-list{margin-top:32px;display:grid;gap:14px}
-.qa-item{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;box-shadow:var(--shadow)}
-.qa-item .q{font-weight:900;font-size:17px;color:var(--text);display:flex;gap:10px}
-.qa-item .q .tag{flex-shrink:0;width:26px;height:26px;border-radius:999px;background:var(--accent-2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900}
-.qa-item .a{margin-top:10px;margin-left:36px;color:var(--muted-2);font-size:14px}
-.events-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:32px}
-.event-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
-.event-date{font-size:13px;font-weight:900;color:var(--accent-2);letter-spacing:.06em;margin-bottom:8px}
-.event-card h3{margin:0 0 8px;font-size:18px}
-.event-card p{margin:0;color:var(--muted-2);font-size:14px}
-.chip{display:inline-flex;align-items:center;padding:9px 16px;border-radius:999px;border:1px solid var(--gold);background:rgba(255,255,255,.75);font-weight:800;color:var(--muted);font-size:13px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
-.section-alt{background:var(--bg-soft}
-footer{padding:60px 0;text-align:center;color:var(--muted-2);font-size:13px}
-footer a{color:var(--accent);text-decoration:underline}
-@media(max-width:900px){.hero-grid,.split,.split.reverse{grid-template-columns:1fr!important}.split.reverse .photo-wrap{order:0}.video-grid,.media-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.video-grid,.media-grid{grid-template-columns:1fr}.meta-grid{grid-template-columns:1fr 1fr}}
+/* 聯絡 */
+.contact-card{margin-top:28px;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.contact-item .label{font-size:12px;color:var(--muted-2);font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.contact-item .value{font-size:17px;color:var(--text);font-weight:700;margin-top:6px}
+
+footer{padding:56px 0;text-align:center;color:var(--muted-2);font-size:13px}
+
+@media(max-width:900px){
+  .hero-grid,.split,.split.reverse{grid-template-columns:1fr!important}
+  .split.reverse .photo-wrap{order:0}
+  .photo-wrap{position:static}
+  .perf-grid,.media-grid,.contact-card{grid-template-columns:1fr}
+  .tl-item{grid-template-columns:1fr;gap:6px}
+}
+@media(max-width:640px){
+  .perf-grid{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
 
-<!-- ===== Hero：個人主視覺 ===== -->
+<!-- ===== Hero：封面照片＋主視覺 ===== -->
 <header class="hero">
   <div class="container hero-grid">
-    <div>
-      <span class="chip">✦ 大提琴演奏家・音樂教育家</span>
-      <div class="tagline" style="margin-top:18px">感性的背後是理性</div>
-      <h1 class="headline">佩佩老師<br><span class="accent">用音樂說故事</span></h1>
-      <p class="lead">投入音樂教育與演奏長達25年，演出場次超過2,000場。用大提琴的琴弦，訴說每一個動人的故事。</p>
-      <div class="meta-grid">
-        <div class="meta-card"><strong>25+</strong><span>年音樂資歷</span></div>
-        <div class="meta-card"><strong>2,000+</strong><span>場演出經驗</span></div>
-      </div>
-    </div>
     <div class="hero-photo">
-      <img src="images/hero-main.jpg" alt="佩佩老師" loading="eager">
+      <img src="images/image2.jpg" alt="陳佩君老師手持樂譜留影" loading="eager">
+    </div>
+    <div>
+      <span class="chip">✦ 鋼琴家・音樂教育家</span>
+      <h1 class="headline">陳佩君 老師<br><span class="accent">用琴聲說故事</span></h1>
+      <p class="lead">我是佩佩，專注音樂策展與藝術跨界演出，致力將傳統古典音樂結合特色舞蹈，打造客製化、創意化的藝術體驗，讓音樂真正走入生活，提升現代人的心靈層次，並傳遞「真、善、美」的普世精神。</p>
+      <div class="meta-grid">
+        <div class="meta-card"><strong>國立台南藝術大學</strong><span>音樂表演與創作研究所鋼琴演奏碩士</span></div>
+        <div class="meta-card"><strong>現任</strong><span>崇學國小音樂班鋼琴指導老師</span></div>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- ===== 演出影片 ===== -->
-<section class="section video-section" id="videos">
+<!-- ===== 關於佩佩老師 ===== -->
+<section class="section" id="about">
   <div class="container">
-    <div class="eyebrow">PERFORMANCES</div>
-    <h2>精選演出影片</h2>
-    <p class="section-lead">聆听佩佩老師的大提琴演奏，感受音樂中的情感與故事</p>
-    <div class="video-grid">
-      <div class="video-card">
-        <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/tU_7ZNp9mLQ" title="淚光閃閃 - 佩佩老師大提琴演奏" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-info">
-          <div class="source">228事件紀念音樂會</div>
-          <h3>淚光閃閃（鋼琴與室內樂團）</h3>
-          <p>台南市政府旁228紀念公園現場演出</p>
-        </div>
-      </div>
-      <div class="video-card">
-        <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/m74JGTYlI1A" title="女人花 - 佩佩老師大提琴演奏" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-info">
-          <div class="source">大提琴獨奏</div>
-          <h3>女人花（大提琴版本）</h3>
-          <p>經典曲目重新演繹</p>
-        </div>
-      </div>
-    </div>
+    <div class="eyebrow">ABOUT</div>
+    <h2>關於佩佩老師</h2>
+    <p class="section-lead">從台南出發，一路走上鋼琴演奏與音樂教育的道路。</p>
 
-    <!-- 更多影片連結 -->
-    <div class="more-videos">
-      <h3>📺 更多演出影片</h3>
-      <div class="more-links">
-        <a href="https://rise-mediacorp.com/archives/110051" target="_blank" class="more-link">
-          🎵 Rise Media 專訪
-        </a>
-        <a href="https://www.ganjingworld.com/video/1il9u87navh5kDUx9mynC8HzJ1um1c" target="_blank" class="more-link">
-          🎬 甘肅世界專區
-        </a>
-        <a href="https://www.youtube.com/results?search_query=佩佩老師+大提琴" target="_blank" class="more-link">
-          🔍 YouTube 更多影片
-        </a>
+    <div class="split">
+      <div class="photo-wrap">
+        <img src="images/image1.jpeg" alt="陳佩君老師肖像照" loading="lazy">
+      </div>
+      <div class="text-card">
+        <h3>🎹 音樂之路</h3>
+        <p>鋼琴家陳佩君，國立台南藝術大學音樂表演與創作研究所碩士。出身台南市，啟蒙於潘秀珍老師。</p>
+        <p>1995年考取大成國中音樂班，主修低音提琴，師事王淑瑜老師；副修鋼琴，師事黃忠正老師。1998年以主修第一名的優異成績考取台南應用科技大學（前台南科技大學）音樂系五專部，主修鋼琴，師事郭亮吟老師；副修低音提琴，師事陳羿雯老師。在校期間連續三年榮獲音樂系第一名獎學金，並獲得山葉音樂獎學金贊助。</p>
+        <p>求學期間曾任中文、英文、義大利文、德文、法文、歌劇、合唱團等聲樂語韻表演課程之課堂伴奏，並擔任丁晏海、曹圓、陸一嬋、倪百聰、吳旭玲等教授之助理伴奏。多次榮獲音樂系學業、主修會考成績優異第一名；2002年榮獲台南科技大學音樂系鋼琴組協奏曲比賽優勝，由庾燕誠教授指揮台南科技大學管弦樂團協奏，於台南科技大學「乃建堂」演出貝多芬第一號鋼琴協奏曲。2003年考取台南應用科技大學音樂系二技，主修鋼琴，師事郭亮吟老師。</p>
+        <p>2005年學士畢業，同年考取國立高雄教育大學音樂系鋼琴演奏碩士班、國立台南大學音樂系鋼琴演奏暨教學碩士班、國立中山大學音樂系音樂學碩士班、國立新竹教育大學鋼琴演奏碩士班、輔仁大學鋼琴演奏碩士班、國立台南藝術大學音樂表演與創作研究所等六所研究所，隨即於2005年九月就讀國立台南藝術大學音樂表演與創作研究所主修鋼琴演奏，師事鍾曉青教授。在校期間曾接受黃瑛瑛、陳宏寬、卓一龍、Elizabeth A. Pridonoff、Natalia Frolova、Jennifer Lim等大師指導。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 創業歷程與理念 ===== -->
-<section class="section" id="story">
+<!-- ===== 教學經驗 ===== -->
+<section class="section section-alt" id="teaching">
   <div class="container">
-    <div class="eyebrow">STORY</div>
-    <h2>音樂之路與教育理念</h2>
-    <p class="section-lead">從興趣到專業，從舞台到教學，佩佩老師用25年的堅持與熱情，影響了無數學生的音樂人生。</p>
+    <div class="eyebrow">TEACHING</div>
+    <h2>教學經驗</h2>
 
-    <div class="split">
+    <div class="split reverse">
       <div class="photo-wrap">
-        <img src="images/story-childhood.jpg" alt="音樂學習之路" loading="lazy">
+        <img src="images/perf-steinway.jpg" alt="陳佩君老師於音樂廳留影" loading="lazy">
       </div>
       <div class="text-card">
-        <h3>🎹 從小與音樂為伴</h3>
-        <p>佩佩老師從小就展現對音樂的天賦與熱愛。從第一次接觸大提琴開始，就深深著迷於這項樂器的深沉音色。25年來，不間斷的練習與演出，讓音樂成為她生命中最重要的一部分。</p>
+        <p>畢業至今，曾任台北功學社鋼琴講師，及曾任台北、台南各音樂教室鋼琴教師，曾任教於台南市大成國中社團指導老師，高雄縣文賢國小社團指導老師，台南市後甲國中藝術才能班音樂基礎訓練與樂理、鋼琴指導老師，曾任後甲國中、日新國小、南科實驗小學代課老師，永康國中音樂課代課老師，現任崇學國小音樂班鋼琴指導老師。陳老師並積極投入教學、個人演奏、鋼琴合作藝術及音樂學研究領域，為一位用心、推廣音樂教育、演奏活躍的青年音樂家。</p>
+        <p><strong>代表性合作客戶包括：</strong></p>
+        <ul>
+          <li>東門美術館藝術音樂會</li>
+          <li>台南綠島二二八和平紀念音樂會</li>
+          <li>神韻茶會受邀演出團隊</li>
+        </ul>
+        <p>這些專案不僅融合古典樂章與精緻舞蹈，更注重場域氛圍的細膩營造，讓參與者在優雅中感受到心靈的洗禮與啟發。無論是文化機構的公辦展演、社團高端茶會，或企業品牌活動，都能量身設計出最具感染力的音樂藝術方案。</p>
+        <p>期待有機會為扶輪社、同濟會的慈善晚會、會員聯誼或文化推廣活動注入藝術溫度；也歡迎文化部策展人一同探討如何將傳統美學與當代創意結合，共同推廣優質藝術生活化。讓我們攜手，用音樂與舞蹈點亮人心！</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 學歷與師承 ===== -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="eyebrow">EDUCATION</div>
+    <h2>學歷與師承</h2>
+    <p class="section-lead">最高學歷：國立台南藝術大學音樂表演與創作研究所鋼琴演奏碩士</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="year">啟蒙</div>
+        <div class="detail">啟蒙老師：<strong>潘秀珍</strong> 老師</div>
+      </div>
+      <div class="tl-item">
+        <div class="year">1995</div>
+        <div class="detail">考取<strong>大成國中音樂班</strong>——主修低音提琴（師事王淑瑜老師）／副修鋼琴（師事黃忠正老師）</div>
+      </div>
+      <div class="tl-item">
+        <div class="year">1998</div>
+        <div class="detail">以主修第一名考取<strong>台南應用科技大學（前台南科技大學）音樂系五專部</strong>——主修鋼琴（師事郭亮吟老師）／副修低音提琴（師事陳羿雯老師），連續三年音樂系第一名獎學金、山葉音樂獎學金</div>
+      </div>
+      <div class="tl-item">
+        <div class="year">2003</div>
+        <div class="detail">考取<strong>台南應用科技大學音樂系二技</strong>，主修鋼琴，師事郭亮吟老師</div>
+      </div>
+      <div class="tl-item">
+        <div class="year">2005</div>
+        <div class="detail">學士畢業，同年獲六所研究所錄取，就讀<strong>國立台南藝術大學音樂表演與創作研究所</strong>，主修鋼琴演奏，師事鍾曉青教授</div>
       </div>
     </div>
 
-    <div class="split reverse" style="margin-top:36px">
-      <div class="photo-wrap">
-        <img src="images/story-performance.jpg" alt="舞台演出" loading="lazy">
+    <p class="section-lead" style="margin-top:32px">研究所期間曾接受下列大師指導：</p>
+    <div class="mentor-tags">
+      <span class="mentor-tag">黃瑛瑛</span>
+      <span class="mentor-tag">陳宏寬</span>
+      <span class="mentor-tag">卓一龍</span>
+      <span class="mentor-tag">Elizabeth A. Pridonoff</span>
+      <span class="mentor-tag">Natalia Frolova</span>
+      <span class="mentor-tag">Jennifer Lim</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 精選演出／學習歷程 ===== -->
+<section class="section section-alt" id="performances">
+  <div class="container">
+    <div class="eyebrow">PERFORMANCES</div>
+    <h2>學習歷程・精選演出</h2>
+    <p class="section-lead">求學與職涯期間累積四十六場正式演出紀錄，以下為精選代表作，完整清單可展開查看。</p>
+
+    <div class="perf-grid">
+      <div class="perf-card">
+        <div class="thumb"><img src="images/perf-steinway.jpg" alt="音樂會演出"></div>
+        <div class="body">
+          <div class="date">2002年5月29日</div>
+          <h3>台南科技大學鋼琴組協奏曲比賽優勝</h3>
+          <p>與台南科技大學管弦樂團協奏，於「乃建堂」演出貝多芬第一號鋼琴協奏曲</p>
+        </div>
       </div>
-      <div class="text-card">
-        <h3>🎭 2,000+場的舞台經驗</h3>
-        <p>從小型音樂廳到大型活動舞台，從獨奏到室內樂團，佩佩老師累積了豐富的演出經驗。每一場演出都是獨特的體驗，也讓她更了解如何用音樂觸動人心。</p>
+      <div class="perf-card">
+        <div class="thumb"><img src="images/story-childhood.jpg" alt="鋼琴獨奏會"></div>
+        <div class="body">
+          <div class="date">2005年5月13日</div>
+          <h3>The Art of Fingers 陳佩君鋼琴獨奏會</h3>
+          <p>台南女子技術學院學生活動中心五樓西樂廳</p>
+        </div>
+      </div>
+      <div class="perf-card">
+        <div class="thumb"><img src="images/story-event-purple.jpg" alt="巡迴演出"></div>
+        <div class="body">
+          <div class="date">2007年6-8月</div>
+          <h3>2007年陳佩君鋼琴獨奏會（南科大／南藝大／台南三場）</h3>
+          <p>台南科技大學、國立台南藝術大學、國立台南成功大學鳳凰樹劇場</p>
+        </div>
+      </div>
+      <div class="perf-card">
+        <div class="thumb"><img src="images/story-cert.jpg" alt="長笛慈善演奏會"></div>
+        <div class="body">
+          <div class="date">2007年8月26日</div>
+          <h3>「朋友之間」雙長笛慈善演奏會</h3>
+          <p>台北市中山堂中正廳，鋼琴：陳佩君</p>
+        </div>
+      </div>
+      <div class="perf-card">
+        <div class="thumb"><img src="images/story-group.jpg" alt="校慶巡迴演出"></div>
+        <div class="body">
+          <div class="date">2004年4-5月</div>
+          <h3>台南女子技術學院四十週年校慶巡迴演出「古典之美」</h3>
+          <p>台北中山堂、高雄中正文化中心、台南市立藝術中心、新竹建華國中，管風琴、鋼琴：陳佩君</p>
+        </div>
+      </div>
+      <div class="perf-card">
+        <div class="thumb"><img src="images/perf-steinway.jpg" alt="歌劇選粹之夜"></div>
+        <div class="body">
+          <div class="date">2010年11月2日</div>
+          <h3>歌劇萬花筒－歌劇選粹之夜</h3>
+          <p>高雄市立文化中心至德堂，高雄市風雅頌藝術文化基金會／創世歌劇團</p>
+        </div>
       </div>
     </div>
 
-    <div class="photo-grid">
-      <div class="photo-card">
-        <img src="images/story-event-purple.jpg" alt="活動演出">
-        <div class="caption">精彩活動演出</div>
+    <div class="more-btn-wrap">
+      <button class="more-btn" id="togglePerfBtn" onclick="
+        var el=document.getElementById('full-perf-list');
+        var btn=document.getElementById('togglePerfBtn');
+        var open=el.classList.toggle('show');
+        btn.classList.toggle('open', open);
+        btn.querySelector('.label').textContent = open ? '收合完整演出' : '看更多完整演出';
+        if(open){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      ">
+        <span class="label">看更多完整演出</span>
+        <span class="arrow">→</span>
+      </button>
+    </div>
+
+    <div id="full-perf-list">
+      <div class="perf-table-wrap">
+        <table class="perf-table">
+          <thead>
+            <tr><th>活動名稱</th><th>主辦單位／合作對象</th><th>展演地點</th><th>日期</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="event">二胡演奏家蔡鎮宇獨奏會</td><td>琬莎古典音樂沙龍</td><td>台南琬莎古典音樂沙龍</td><td class="date">2010/12/26（日）2:30PM</td></tr>
+            <tr><td class="event">歌劇萬花筒－歌劇選粹之夜</td><td>高雄市風雅頌藝術文化基金會／創世歌劇團</td><td>高雄市立文化中心至德堂</td><td class="date">2010/11/2（二）7:30PM</td></tr>
+            <tr><td class="event">許淇鈞聲樂獨唱會</td><td>許淇鈞／陳佩君</td><td>國立台北教育大學創意館雨賢廳</td><td class="date">2010/6/13（日）</td></tr>
+            <tr><td class="event">王威傑單簧管獨奏會</td><td>王威傑／陳佩君</td><td>台南大學雅音樓</td><td class="date">2010/6/1（二）7:30PM</td></tr>
+            <tr><td class="event">林珮儀低音管獨奏會</td><td>林珮儀／陳佩君</td><td>台南大學雅音樓</td><td class="date">2010/5/8（六）2:30PM</td></tr>
+            <tr><td class="event">台南藝術大學應用音樂戲演奏組畢業音樂會</td><td>台南藝術大學應用音樂戲演奏組</td><td>國立台南藝術大學演藝廳</td><td class="date">2009/5/5　4:00PM</td></tr>
+            <tr><td class="event">劉于菁二胡音樂獨奏會</td><td>台南藝術大學中國音樂學系</td><td>國立台南藝術大學演藝廳</td><td class="date">2009/4/12（日）7:30PM</td></tr>
+            <tr><td class="event">歲末聯合音樂會</td><td>陳亞竹／陳佩君／王詠文</td><td>天母功學社音樂廳</td><td class="date">2008/2/2（六）7:00PM</td></tr>
+            <tr><td class="event">綠島人權藝術節開幕式、百合哉種植儀式</td><td>文建會／台東縣立文化局</td><td>台東縣綠島綠洲山莊、十山中隊（燕子口）</td><td class="date">2007/10/12-13（五、六）</td></tr>
+            <tr><td class="event">「朋友之間」雙長笛慈善演奏會（鋼琴：陳佩君）</td><td>傳神傳播有限公司</td><td>台北市中山堂中正廳</td><td class="date">2007/8/26（日）7:30PM</td></tr>
+            <tr><td class="event">陳佩君鋼琴獨奏會　台南場</td><td>陳佩君</td><td>國立台南成功大學鳳凰樹劇場</td><td class="date">2007/6/20（三）7:30PM</td></tr>
+            <tr><td class="event">「奏鳴曲與組曲之夜」孫晨甄＆陳佩君聯合音樂會</td><td>國立臺灣史前文化博物館</td><td>國立臺灣史前文化博物館會議廳</td><td class="date">2007/6/16（日）7:30PM</td></tr>
+            <tr><td class="event">陳佩君鋼琴獨奏會　南藝大場</td><td>國立台南藝術大學音樂表演與創作研究所</td><td>國立台南藝術大學音樂二期系館A109教室</td><td class="date">2007/6/14（四）7:30PM</td></tr>
+            <tr><td class="event">陳佩君鋼琴獨奏會　南科大場</td><td>台南科技大學古典音樂欣賞社</td><td>台南科技大學學生活動中心五樓西樂廳</td><td class="date">2007/5/23（三）3:00PM</td></tr>
+            <tr><td class="event">孫晨甄＆陳佩君聯合音樂會</td><td>孫晨甄／陳佩君</td><td>天母功學社音樂廳</td><td class="date">2007/5/12（六）7:00PM</td></tr>
+            <tr><td class="event">李欣怡聲樂獨唱會（鋼琴：陳佩君）</td><td>李欣怡／陳佩君</td><td>台南科技大學學生活動中心五樓西樂廳</td><td class="date">2007/4/23（二）7:00PM</td></tr>
+            <tr><td class="event">陳亞竹長笛演奏會（鋼琴：陳佩君）</td><td>陳亞竹／陳佩君</td><td>天母功學社音樂廳</td><td class="date">2007/3/3（六）7:00PM</td></tr>
+            <tr><td class="event">系列音樂會II（鋼琴：陳佩君）</td><td>王詠文／李健彰／陳亞竹／孫晨甄／潘佳玲</td><td>功學社延平店公司音樂廳</td><td class="date">2006/12/24（日）2:00PM</td></tr>
+            <tr><td class="event">系列音樂會I（鋼琴：陳佩君）</td><td>王詠文／李健彰／陳亞竹／孫晨甄</td><td>功學社延平店公司音樂廳</td><td class="date">2006/10/22（日）2:30PM</td></tr>
+            <tr><td class="event">比賽錄音</td><td>陳佩君</td><td>家威影音實業有限公司錄音室</td><td class="date">2006/7/11　7:00-8:00PM</td></tr>
+            <tr><td class="event">陳佩君鋼琴獨奏會</td><td>國立台南藝術大學音樂表演與創作研究所</td><td>國立台南藝術大學演藝廳</td><td class="date">2006/6/8（四）8:00PM</td></tr>
+            <tr><td class="event">紀念莫札特誕辰250年三大歌劇選粹之夜（鋼琴：陳佩君）</td><td>台中港區藝術中心／台中市慎齋國小</td><td>台中縣立港區藝術中心</td><td class="date">2006/4/16（日）7:30PM</td></tr>
+            <tr><td class="event">琴韻抒聲（鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2006/4/9（日）2:00PM</td></tr>
+            <tr><td class="event">紀念莫札特誕辰250年三大歌劇選粹之夜（鋼琴：陳佩君）</td><td>丁晏海</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2006/4/8（六）7:30PM</td></tr>
+            <tr><td class="event">高雄21音樂會－義大利歌曲之夜 男中音丁晏海獨唱會（鋼琴：陳佩君）</td><td>高雄市二十一世紀都市發展協會</td><td>高雄市苓雅區四維四路10號16樓</td><td class="date">2006/3/3（五）7:30PM</td></tr>
+            <tr><td class="event">義大利歌曲之夜 男中音丁晏海獨唱會（鋼琴：陳佩君）</td><td>國立臺灣史前文化博物館</td><td>國立臺灣史前文化博物館八角型國際會議廳</td><td class="date">2006/1/14（六）7:30PM</td></tr>
+            <tr><td class="event">留琴歲月～音樂表演與創作研究所跨年音樂會</td><td>國立台南藝術大學音樂表演與創作研究所</td><td>國立台南藝術大學音樂二期系館A109教室</td><td class="date">2005/12/29（四）7:00PM</td></tr>
+            <tr><td class="event">義大利歌曲之夜 男中音丁晏海獨唱會（鋼琴：陳佩君）</td><td>國立台南藝術大學音樂表演與創作研究所</td><td>國立台南藝術大學演藝廳</td><td class="date">2005/12/12（一）7:30PM</td></tr>
+            <tr><td class="event">蔡佩珊大提琴獨奏會（鋼琴伴奏：陳佩君）</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2005/5/16（一）7:30PM</td></tr>
+            <tr><td class="event">The Art of Fingers　陳佩君鋼琴獨奏會</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2005/5/13（五）8:00PM</td></tr>
+            <tr><td class="event">陳穎貞獨唱會（鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2005/4/24（日）7:00PM</td></tr>
+            <tr><td class="event">芳華再現－劉玨伶聲樂獨唱會（鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2005/4/12（二）8:00PM</td></tr>
+            <tr><td class="event">孫晨甄長笛獨奏（鋼琴：陳佩君）</td><td>孫晨甄</td><td>成功大學鳳凰樹劇場</td><td class="date">2005/2/19（六）7:30PM</td></tr>
+            <tr><td class="event">張月萍、陳佩君聯合音樂會</td><td>張月萍</td><td>花蓮門諾醫院施桂蘭廳</td><td class="date">2004/6/5（六）7:30PM</td></tr>
+            <tr><td class="event">「旋律沒有國界，音樂是我的方位」吳岱晏獨唱會（鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2004/5/20（四）8:00PM</td></tr>
+            <tr><td class="event">陳玟蓉單簧管獨奏會（鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2004/5/18（二）6:00PM</td></tr>
+            <tr><td class="event">四十週年校慶巡迴演出「古典之美」（管風琴、鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>新竹市建華國中</td><td class="date">2004/5/4（二）2:00PM</td></tr>
+            <tr><td class="event">四十週年校慶巡迴演出「古典之美」（管風琴、鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台北市中山堂中正廳</td><td class="date">2004/5/3（一）7:30PM</td></tr>
+            <tr><td class="event">四十週年校慶巡迴演出「古典之美」（管風琴、鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>高雄市中正文化中心</td><td class="date">2004/4/27（二）7:30PM</td></tr>
+            <tr><td class="event">四十週年校慶巡迴演出「古典之美」（管風琴、鋼琴：陳佩君）</td><td>台南女子技術學院</td><td>台南市立藝術中心</td><td class="date">2004/4/26（一）7:30PM</td></tr>
+            <tr><td class="event">誠品書香音樂會(一) 古典奏鳴曲與樂團選曲（鋼琴：陳佩君）</td><td>誠品書店</td><td>台南市誠品書店地下一樓圖書區</td><td class="date">2004/4/9（五）8:00PM</td></tr>
+            <tr><td class="event">誠品書香音樂會(二) 歌唱及流行演奏（鋼琴：陳佩君）</td><td>誠品書店</td><td>台南市誠品書店地下一樓圖書區</td><td class="date">2004/4/16（五）8:00PM</td></tr>
+            <tr><td class="event">誠品書香音樂會(三) 古典音樂小品與電影配樂（鋼琴：陳佩君）</td><td>誠品書店</td><td>台南市誠品書店地下一樓圖書區</td><td class="date">2004/4/23（五）8:00PM</td></tr>
+            <tr><td class="event">誠品書香音樂會(四) 歌唱及流行演奏（鋼琴：陳佩君）</td><td>誠品書店</td><td>台南市誠品書店地下一樓圖書區</td><td class="date">2004/4/30（五）8:00PM</td></tr>
+            <tr><td class="event">音愁－92級鍵盤組第七組畢業音樂會</td><td>台南女子技術學院</td><td>台南女子技術學院學生活動中心五樓西樂廳</td><td class="date">2003/4/30（三）5:00PM</td></tr>
+            <tr><td class="event">陳佩君鋼琴協奏曲音樂會</td><td>台南女子技術學院</td><td>台南女子技術學院乃建堂</td><td class="date">2002/5/29（三）</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="photo-card">
-        <img src="images/story-group.jpg" alt="團體合影">
-        <div class="caption">與音樂同好合影</div>
-      </div>
-      <div class="photo-card">
-        <img src="images/story-cert.jpg" alt="專業認證">
-        <div class="caption">專業資格認證</div>
-      </div>
+      <p style="font-size:12.5px;color:var(--muted-2);margin-top:14px;text-align:center">共 46 場正式演出紀錄（資料來源：陳佩君老師履歷表附錄）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 文章與著作 ===== -->
+<section class="section" id="publications">
+  <div class="container">
+    <div class="eyebrow">PUBLICATIONS</div>
+    <h2>文章與著作</h2>
+    <div class="pub-list">
+      <div class="pub-item"><span class="num">1</span><span>國立台南藝術大學音樂表演與創作研究所碩士論述《論述荀貝格三首鋼琴曲作品十一中演變與革新之寫作意義》（Discussion on the Revolution and Evolution in Schoenberg's <em>Drei Klavierstücke, Op.11</em>）</span></div>
+      <div class="pub-item"><span class="num">2</span><span>台南女子技術學院音樂系第13期《紫竹調》：〈木笛的歷史發展與演進〉</span></div>
+      <div class="pub-item"><span class="num">3</span><span>涴莎古典音樂沙龍《李宜錦小提琴獨奏會》網路音樂會簡介（<a href="http://www.classical-music.com.tw/02_1_in.asp?id=41" target="_blank" rel="noopener">classical-music.com.tw</a>）</span></div>
+      <div class="pub-item"><span class="num">4</span><span>涴莎古典音樂沙龍《鍾曉青鋼琴獨奏會》網路音樂會簡介（<a href="http://www.classical-music.com.tw/02_1_in.asp?id=42" target="_blank" rel="noopener">classical-music.com.tw</a>）</span></div>
+      <div class="pub-item"><span class="num">5</span><span>2006年卓一龍教授鋼琴獨奏會，音樂會節目單撰寫</span></div>
+      <div class="pub-item"><span class="num">6</span><span>台南女子技術學院音樂系2004年秋季國際學術研討會暨大師班講座《從詮釋的角度來看古典與前衛－國際海外傑出華人音樂家系列》，會議手冊音樂會節目解說撰寫人之一</span></div>
+      <div class="pub-item"><span class="num">7</span><span>台南女子技術學院音樂系暨音樂研究所2005年春季國際學術研討會暨大師班講座《從詮釋的角度來看古典與前衛－古今音樂語彙交集，巴洛克與現代》，會議手冊音樂會節目特約專文</span></div>
+      <div class="pub-item"><span class="num">8</span><span>蕭士杰演講音樂會之編譯撰文</span></div>
     </div>
   </div>
 </section>
@@ -222,98 +395,44 @@ footer a{color:var(--accent);text-decoration:underline}
   <div class="container">
     <div class="eyebrow">MEDIA</div>
     <h2>媒體報導</h2>
-    <p class="section-lead">佩佩老師的音樂理念與教學經驗，獲得多家媒體採訪與報導</p>
     <div class="media-grid">
       <div class="media-card">
-        <div class="media-thumb">
-          <img src="images/story-event-purple.jpg" alt="Rise Media 專訪">
-        </div>
-        <div class="media-body">
-          <div class="outlet">Rise Media</div>
-          <h3>佩佩老師專訪：音樂教育的熱情與堅持</h3>
-          <p>深入了解一位音樂教育家的心路歷程</p>
-        </div>
+        <div class="outlet">大紀元｜2008.07.06</div>
+        <h3>組圖：聲樂亞太初賽圓滿落幕　入圍者盼紐約行</h3>
+        <p>報導「全世界華人聲樂大賽」亞太初賽現場，陳佩君擔任入圍選手吳岱晏、李淑媛的鋼琴伴奏並受訪。</p>
+        <a class="read" href="https://www.epochtimes.com/b5/8/7/6/n2181567.htm" target="_blank" rel="noopener">閱讀全文 →</a>
       </div>
       <div class="media-card">
-        <div class="media-thumb">
-          <img src="images/story-performance.jpg" alt="228紀念音樂會">
-        </div>
-        <div class="media-body">
-          <div class="outlet">Rise Media</div>
-          <h3>228事件紀念音樂會演出報導</h3>
-          <p>用音樂撫慰人心，用琴聲傳遞和平</p>
-        </div>
-      </div>
-      <div class="media-card">
-        <div class="media-thumb">
-          <img src="images/hero-main.jpg" alt="甘肅世界專區">
-        </div>
-        <div class="media-body">
-          <div class="outlet">甘肅世界</div>
-          <h3>大提琴演奏精選專區</h3>
-          <p>經典曲目跨平台傳播</p>
-        </div>
+        <div class="outlet">大紀元｜2024.04.11</div>
+        <h3>藝術公司負責人觀神韻：感覺到一種宇宙感</h3>
+        <p>陳佩君以藝術文化公司負責人身分受訪，分享觀賞神韻紐約藝術團台南場演出的感受。</p>
+        <a class="read" href="https://www.epochtimes.com/b5/24/4/10/n14222762.htm" target="_blank" rel="noopener">閱讀全文 →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Q&A 問答 ===== -->
-<section class="section" id="qa">
+<!-- ===== 聯絡方式 ===== -->
+<section class="section" id="contact">
   <div class="container">
-    <div class="eyebrow">Q &amp; A</div>
-    <h2>常見問答</h2>
-    <p class="section-lead">想更了解佩佩老師的課程或演出？以下是一些常見問題：</p>
-    <div class="qa-list">
-      <div class="qa-item">
-        <div class="q"><span class="tag">Q</span>佩佩老師有開課程嗎？</div>
-        <div class="a">有的，佩佩老師提供大提琴一對一教學及團體課程，歡迎聯絡諮詢。</div>
+    <div class="eyebrow">CONTACT</div>
+    <h2>聯絡方式</h2>
+    <div class="contact-card">
+      <div class="contact-item">
+        <div class="label">電話／手機</div>
+        <div class="value">0988-004-118</div>
       </div>
-      <div class="qa-item">
-        <div class="q"><span class="tag">Q</span>可以邀請佩佩老師演出嗎？</div>
-        <div class="a">可以，歡迎洽談各類演出合作，包含婚禮表演、活動演出、音樂會等。</div>
-      </div>
-      <div class="qa-item">
-        <div class="q"><span class="tag">Q</span>佩佩老師的教學風格是什麼？</div>
-        <div class="a">佩佩老師注重音樂素養的培養，不只是技巧，更重視音樂的理解與表達。</div>
-      </div>
-      <div class="qa-item">
-        <div class="q"><span class="tag">Q</span>零基礎可以學大提琴嗎？</div>
-        <div class="a">當然可以！佩佩老師有豐富的啟蒙教學經驗，歡迎任何年齡的初學者加入。</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 最近活動 ===== -->
-<section class="section section-alt" id="events">
-  <div class="container">
-    <div class="eyebrow">EVENTS</div>
-    <h2>近期活動</h2>
-    <p class="section-lead">關注佩佩老師的最新動態，歡迎報名參加</p>
-    <div class="events-grid">
-      <div class="event-card">
-        <div class="event-date">敬請期待</div>
-        <h3>【活動名稱待補】</h3>
-        <p>【地點與簡短介紹待補】</p>
-      </div>
-      <div class="event-card">
-        <div class="event-date">敬請期待</div>
-        <h3>【活動名稱待補】</h3>
-        <p>【地點與簡短介紹待補】</p>
-      </div>
-      <div class="event-card">
-        <div class="event-date">敬請期待</div>
-        <h3>【活動名稱待補】</h3>
-        <p>【地點與簡短介紹待補】</p>
+      <div class="contact-item">
+        <div class="label">Email</div>
+        <div class="value">johnpeggy0706@gmail.com</div>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>佩佩老師｜大提琴演奏家・音樂教育家</p>
-  <p style="margin-top:8px;font-size:12px">🎵 用音樂說故事，用琴弦傳遞情感</p>
+  <p>陳佩君老師｜鋼琴家・音樂教育家</p>
+  <p style="margin-top:8px;font-size:12px">用琴聲說故事，讓音樂走進生活</p>
 </footer>
 
 </body>
